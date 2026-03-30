@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FX Terminal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>TERMINAL</h1>
+    <span class="live">● LIVE</span>
+  </div>
+
+  <!-- Ticker -->
+  <div class="ticker">
+    <div>USD/INR: <span id="usdInr">--</span></div>
+    <div>USD/EUR: <span id="usdEur">--</span></div>
+    <div>USD/JPY: <span id="usdJpy">--</span></div> 
+    <div>USD/RUB: <span id="usdRub">--</span></div>
+  </div>
+
+  <!-- Converter Box -->
+  <div class="card">
+
+    <input type="number" id="amount" placeholder="Enter amount">
+
+    <div class="row">
+      <select id="from">
+        <option value="USD">USD(USA)</option>
+        <option value="INR">INR(IND)</option>
+        <option value="EUR">EUR(FRA)</option>
+        <option value="JPY">JPY(JP)</option> 
+        <option value="RUB">RUB(RUS)</option>
+        <option value="YUAN">YUAN(CHIN)</option>  
+        
+        
+      </select>
+
+      <button class="swap" onclick="swap()">⇄</button>
+
+      <select id="to">
+        <option value="USD">USD(USA)</option>
+        <option value="INR">INR(IND)</option>
+        <option value="EUR">EUR(FRA)</option>
+        <option value="JPY">JPY(JP)</option> 
+        <option value="RUB">RUB(RUS)</option>
+        <option value="YUAN">YUAN(CHIN)</option>  
+        
+      </select>
+    </div>
+
+    <button class="convert" onclick="convert()">CONVERT</button>
+
+    <div id="result">Enter amount and press convert</div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
